@@ -11,4 +11,8 @@ module.exports = {
     'html',
     'text',
   ],
+
+  transform: { '^.+\\.(js|jsx)$': 'babel-jest' },
+
+  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
 };
