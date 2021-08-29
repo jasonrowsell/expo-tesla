@@ -65,5 +65,5 @@ CarCard.defaultProps = {
 CarCard.propTypes = {
   title: PropTypes.string,
   tagline: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.node,
 };
