@@ -7,9 +7,9 @@ import CarCard from './car-card';
 
 describe('<CarCard />', () => {
   const renderComponent = () => render(<CarCard title="title" tagline="tagline" source="img" />);
-  test('has 2 children', () => {
+  test('has 3 children', () => {
     const tree = renderer.create(<CarCard title="title" tagline="tagline" source="img" />).toJSON();
-    expect(tree.children.length).toBe(2);
+    expect(tree.children.length).toBe(3);
   });
 
   test('renders correctly', () => {
@@ -27,13 +27,23 @@ describe('<CarCard />', () => {
     getByText('tagline');
   });
 
-  test('alert is displayed when button is pressed', () => {
+  test('custom order alert is displayed when custom order button is pressed', () => {
     jest.spyOn(Alert, 'alert');
-    const { getByTestId } = renderComponent();
+    const { getByText } = renderComponent();
 
-    const button = getByTestId('button');
+    const button = getByText('Custom Order');
     fireEvent.press(button);
 
     expect(Alert.alert).toHaveBeenCalledWith('Custom order was pressed');
+  });
+
+  test('existing inventory alert is displayed when existing inventory button is pressed', () => {
+    jest.spyOn(Alert, 'alert');
+    const { getByText } = renderComponent();
+
+    const button = getByText('Existing Inventory');
+    fireEvent.press(button);
+
+    expect(Alert.alert).toHaveBeenCalledWith('Existing inventory was pressed');
   });
 });

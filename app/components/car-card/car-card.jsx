@@ -19,7 +19,19 @@ export default function CarCard({ title, tagline, image }) {
         <Text style={styles.subtitle}>
           {tagline}
         </Text>
-        <ButtonOption type="primary" content="Custom Order" onPress={() => Alert.alert('Custom order was pressed')} />
+      </View>
+
+      <View style={styles.buttonsContainer}>
+        <ButtonOption
+          type="primary"
+          content="Custom Order"
+          onPress={() => Alert.alert('Custom order was pressed')}
+        />
+        <ButtonOption
+          type="secondary"
+          content="Existing Inventory"
+          onPress={() => Alert.alert('Existing inventory was pressed')}
+        />
       </View>
 
     </View>
