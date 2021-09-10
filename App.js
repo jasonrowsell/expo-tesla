@@ -2,8 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import CarCard from './src/components/car-card';
-import logo from './assets/images/Model3.jpeg';
+import CarCard from './app/components/car-card';
+import logo from './app/assets/images/Model3.jpeg';
 
 export default function App() {
   return (

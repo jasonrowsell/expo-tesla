@@ -12,7 +12,7 @@ export default function ButtonOption({ type, content, onPress }) {
     <View style={styles.container}>
       <Pressable
         style={[styles.button, { backgroundColor }]}
-        onPress={() => onPress()}
+        onPress={onPress}
         testID="button"
       >
         <Text style={[styles.text, { color }]}>{content}</Text>

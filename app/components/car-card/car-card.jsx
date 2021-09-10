@@ -1,8 +1,10 @@
 import React from 'react';
 import {
-  View, Text, ImageBackground, StyleSheet, Dimensions,
+  View, Text, ImageBackground, StyleSheet, Alert,
 } from 'react-native';
 import PropTypes from 'prop-types';
+
+import ButtonOption from '../button-option';
 
 export default function CarCard({ title, tagline, image }) {
   return (
@@ -12,11 +14,12 @@ export default function CarCard({ title, tagline, image }) {
         style={styles.image}
       />
 
-      <View style={styles.titles}>
+      <View style={styles.header}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.subtitle}>
           {tagline}
         </Text>
+        <ButtonOption type="primary" content="Custom Order" onPress={() => Alert.alert('Custom order was pressed')} />
       </View>
 
     </View>
@@ -26,9 +29,9 @@ export default function CarCard({ title, tagline, image }) {
 const styles = StyleSheet.create({
   carContainer: {
     width: '100%',
-    height: Dimensions.get('window').height,
+    height: '100%',
   },
-  titles: {
+  header: {
     marginTop: '30%',
     width: '100%',
     alignItems: 'center',

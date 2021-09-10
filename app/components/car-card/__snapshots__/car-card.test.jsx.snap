@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarCard /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "resizeMode": "cover",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={null}
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": "100%",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginTop": "30%",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 40,
+          "fontWeight": "500",
+        }
+      }
+    >
+      title
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#5c5e62",
+          "fontSize": 16,
+        }
+      }
+    >
+      tagline
+    </Text>
+    <View
+      style={
+        Object {
+          "padding": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderRadius": 20,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#171A20CC",
+            },
+          ]
+        }
+        testID="button"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 12,
+                "fontWeight": "500",
+                "textTransform": "uppercase",
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Custom Order
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
