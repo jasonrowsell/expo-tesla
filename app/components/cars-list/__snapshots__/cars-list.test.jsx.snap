@@ -1,0 +1,872 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarsList /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <RCTScrollView
+    alwaysBounceVertical={true}
+    data={
+      Array [
+        Object {
+          "image": 1,
+          "tagline": "Starting at $69,420",
+          "title": "Model S",
+        },
+        Object {
+          "image": 1,
+          "tagline": "Order Online for",
+          "taglineCTA": "Touchless Delivery",
+          "title": "Model 3",
+        },
+        Object {
+          "image": 1,
+          "tagline": "Order Online for",
+          "taglineCTA": "Touchless Delivery",
+          "title": "Model X",
+        },
+        Object {
+          "image": 1,
+          "tagline": "Order Online for",
+          "taglineCTA": "Touchless Delivery",
+          "title": "Model Y",
+        },
+      ]
+    }
+    decelerationRate="fast"
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    snapToAlignment="start"
+    snapToInterval={1334}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 40,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Model S
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Starting at $69,420
+               
+              <Text
+                style={
+                  Object {
+                    "textDecorationLine": "underline",
+                  }
+                }
+              />
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 50,
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Custom Order
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#FFFFFFA6",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#171A20",
+                      },
+                    ]
+                  }
+                >
+                  Existing Inventory
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 40,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Model 3
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Order Online for
+               
+              <Text
+                style={
+                  Object {
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Touchless Delivery
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 50,
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Custom Order
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#FFFFFFA6",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#171A20",
+                      },
+                    ]
+                  }
+                >
+                  Existing Inventory
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 40,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Model X
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Order Online for
+               
+              <Text
+                style={
+                  Object {
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Touchless Delivery
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 50,
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Custom Order
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#FFFFFFA6",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#171A20",
+                      },
+                    ]
+                  }
+                >
+                  Existing Inventory
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 40,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              Model Y
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Order Online for
+               
+              <Text
+                style={
+                  Object {
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Touchless Delivery
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 50,
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Custom Order
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#FFFFFFA6",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#171A20",
+                      },
+                    ]
+                  }
+                >
+                  Existing Inventory
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

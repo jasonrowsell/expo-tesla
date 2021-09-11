@@ -4,7 +4,7 @@ exports[`<CarCard /> renders correctly 1`] = `
 <View
   style={
     Object {
-      "height": "100%",
+      "height": 1334,
       "width": "100%",
     }
   }
