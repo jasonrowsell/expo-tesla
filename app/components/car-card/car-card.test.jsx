@@ -6,7 +6,10 @@ import { Alert } from 'react-native';
 import CarCard from './car-card';
 
 describe('<CarCard />', () => {
-  const renderComponent = () => render(<CarCard title="title" tagline="tagline" source="img" />);
+  const renderComponent = () => render(
+    <CarCard title="title" tagline="tagline" taglineCTA="taglineCTA" source="img" />,
+  );
+
   test('has 3 children', () => {
     const tree = renderer.create(<CarCard title="title" tagline="tagline" source="img" />).toJSON();
     expect(tree.children.length).toBe(3);
@@ -22,9 +25,9 @@ describe('<CarCard />', () => {
     getByText('title');
   });
 
-  test('has the tagline', () => {
+  test('has the tagline followed by the CTA', () => {
     const { getByText } = renderComponent();
-    getByText('tagline');
+    getByText('tagline taglineCTA');
   });
 
   test('custom order alert is displayed when custom order button is pressed', () => {

@@ -68,6 +68,16 @@ exports[`<CarCard /> renders correctly 1`] = `
       }
     >
       tagline
+       
+      <Text
+        style={
+          Object {
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        taglineCTA
+      </Text>
     </Text>
   </View>
   <View
