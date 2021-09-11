@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 20,
+      "position": "absolute",
+      "top": 50,
+      "width": "100%",
+      "zIndex": 100,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 20,
+        "resizeMode": "contain",
+        "width": 100,
+      }
+    }
+  />
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 25,
+        "resizeMode": "contain",
+        "width": 25,
+      }
+    }
+  />
+</View>
+`;

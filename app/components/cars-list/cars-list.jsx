@@ -20,6 +20,7 @@ export default function CarsList() {
             />
           )
         }
+        keyExtractor={(item, index) => String(index)}
         showsVerticalScrollIndicator={false}
         snapToAlignment="start"
         decelerationRate="fast"
