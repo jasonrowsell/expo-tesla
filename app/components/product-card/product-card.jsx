@@ -38,8 +38,10 @@ export default function ProductCard({
           {tagline}
         </Text>
       </Animated.View>
-
-      <Animated.View style={[styles.buttonsContainer, { opacity }]}>
+      <Animated.View style={
+        [termsLinks ? styles.buttonsContainerTerms : styles.buttonsContainer, { opacity }]
+      }
+      >
         <ButtonOption
           type="primary"
           content={buttonContent}
@@ -50,17 +52,26 @@ export default function ProductCard({
       { termsLinks && (
         <Animated.View style={[styles.termsLinks, { opacity }]}>
           <Text style={styles.terms}>
-            {tagline}
+            Tesla © 2021
+          </Text>
+          <Text style={styles.terms}>
+            Privacy & Legal
+          </Text>
+          <Text style={styles.terms}>
+            Careers
+          </Text>
+          <Text style={styles.terms}>
+            News
           </Text>
         </Animated.View>
       )}
-
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   carContainer: {
+    display: 'flex',
     flex: 1,
     width: '100%',
     height: Dimensions.get('screen').height,
@@ -88,10 +99,27 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 
-  buttonsContainer: {
-    position: 'absolute',
-    bottom: 80,
+  buttonsContainerTerms: {
+    display: 'flex',
+    marginTop: 400,
     width: '100%',
+  },
+  buttonsContainer: {
+    display: 'flex',
+    marginTop: 500,
+    width: '100%',
+  },
+
+  termsLinks: {
+    display: 'flex',
+    width: '100%',
+    marginTop: 70,
+    alignItems: 'center',
+  },
+  terms: {
+    fontSize: 15,
+    color: '#46484d',
+    margin: 5,
   },
 });
 

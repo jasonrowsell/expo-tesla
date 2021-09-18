@@ -28,4 +28,10 @@ export default [{
   tagline: 'Order Online for',
   taglineCTA: 'Touchless Delivery',
   image: require('../../assets/images/ModelY.jpg'),
+}, {
+  type: 'product',
+  title: 'Accessories',
+  buttonContent: 'Shop now',
+  image: require('../../assets/images/Accessories.jpg'),
+  termsLinks: true,
 }];
