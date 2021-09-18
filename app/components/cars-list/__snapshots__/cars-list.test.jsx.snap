@@ -14,14 +14,15 @@ exports[`<CarsList /> renders correctly 1`] = `
       Array [
         Object {
           "image": 1,
-          "tagline": "Starting at $69,420",
-          "title": "Model S",
+          "tagline": "1% Company Car Tax.",
+          "taglineCTA": "Learn More",
+          "title": "Model 3",
         },
         Object {
           "image": 1,
           "tagline": "Order Online for",
           "taglineCTA": "Touchless Delivery",
-          "title": "Model 3",
+          "title": "Model S",
         },
         Object {
           "image": 1,
@@ -54,7 +55,8 @@ exports[`<CarsList /> renders correctly 1`] = `
     onScrollEndDrag={[Function]}
     removeClippedSubviews={false}
     renderItem={[Function]}
-    scrollEventThrottle={50}
+    scrollEventThrottle={16}
+    scrollY={0}
     showsVerticalScrollIndicator={false}
     snapToAlignment="start"
     snapToInterval={1334}
@@ -71,6 +73,7 @@ exports[`<CarsList /> renders correctly 1`] = `
         <View
           style={
             Object {
+              "flex": 1,
               "height": 1334,
               "width": "100%",
             }
@@ -112,6 +115,7 @@ exports[`<CarsList /> renders correctly 1`] = `
               Object {
                 "alignItems": "center",
                 "marginTop": "30%",
+                "opacity": 1,
                 "width": "100%",
               }
             }
@@ -119,207 +123,10 @@ exports[`<CarsList /> renders correctly 1`] = `
             <Text
               style={
                 Object {
+                  "display": "flex",
                   "fontSize": 40,
                   "fontWeight": "500",
-                }
-              }
-            >
-              Model S
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#5c5e62",
-                  "fontSize": 16,
-                }
-              }
-            >
-              Starting at $69,420
-               
-              <Text
-                style={
-                  Object {
-                    "textDecorationLine": "underline",
-                  }
-                }
-              />
-            </Text>
-          </View>
-          <View
-            style={
-              Object {
-                "bottom": 50,
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "padding": 10,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                focusable={true}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderRadius": 20,
-                      "height": 40,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "backgroundColor": "#171A20CC",
-                    },
-                  ]
-                }
-                testID="button"
-              >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12,
-                        "fontWeight": "500",
-                        "textTransform": "uppercase",
-                      },
-                      Object {
-                        "color": "#FFFFFF",
-                      },
-                    ]
-                  }
-                >
-                  Custom Order
-                </Text>
-              </View>
-            </View>
-            <View
-              style={
-                Object {
-                  "padding": 10,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                accessible={true}
-                focusable={true}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "borderRadius": 20,
-                      "height": 40,
-                      "justifyContent": "center",
-                    },
-                    Object {
-                      "backgroundColor": "#FFFFFFA6",
-                    },
-                  ]
-                }
-                testID="button"
-              >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "fontSize": 12,
-                        "fontWeight": "500",
-                        "textTransform": "uppercase",
-                      },
-                      Object {
-                        "color": "#171A20",
-                      },
-                    ]
-                  }
-                >
-                  Existing Inventory
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        onLayout={[Function]}
-        style={null}
-      >
-        <View
-          style={
-            Object {
-              "height": 1334,
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            accessibilityIgnoresInvertColors={true}
-            style={
-              Object {
-                "height": "100%",
-                "position": "absolute",
-                "resizeMode": "cover",
-                "width": "100%",
-              }
-            }
-          >
-            <Image
-              source={1}
-              style={
-                Array [
-                  Object {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  },
-                  undefined,
-                ]
-              }
-            />
-          </View>
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "marginTop": "30%",
-                "width": "100%",
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "fontSize": 40,
-                  "fontWeight": "500",
+                  "paddingBottom": 5,
                 }
               }
             >
@@ -329,11 +136,11 @@ exports[`<CarsList /> renders correctly 1`] = `
               style={
                 Object {
                   "color": "#5c5e62",
-                  "fontSize": 16,
+                  "fontSize": 17,
                 }
               }
             >
-              Order Online for
+              1% Company Car Tax.
                
               <Text
                 style={
@@ -342,7 +149,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   }
                 }
               >
-                Touchless Delivery
+                Learn More
               </Text>
             </Text>
           </View>
@@ -350,6 +157,7 @@ exports[`<CarsList /> renders correctly 1`] = `
             style={
               Object {
                 "bottom": 50,
+                "opacity": 1,
                 "position": "absolute",
                 "width": "100%",
               }
@@ -394,7 +202,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -447,7 +255,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -457,7 +265,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                     ]
                   }
                 >
-                  Existing Inventory
+                  Available Inventory
                 </Text>
               </View>
             </View>
@@ -471,6 +279,7 @@ exports[`<CarsList /> renders correctly 1`] = `
         <View
           style={
             Object {
+              "flex": 1,
               "height": 1334,
               "width": "100%",
             }
@@ -512,6 +321,7 @@ exports[`<CarsList /> renders correctly 1`] = `
               Object {
                 "alignItems": "center",
                 "marginTop": "30%",
+                "opacity": -1.333333333333333,
                 "width": "100%",
               }
             }
@@ -519,8 +329,216 @@ exports[`<CarsList /> renders correctly 1`] = `
             <Text
               style={
                 Object {
+                  "display": "flex",
                   "fontSize": 40,
                   "fontWeight": "500",
+                  "paddingBottom": 5,
+                }
+              }
+            >
+              Model S
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 17,
+                }
+              }
+            >
+              Order Online for
+               
+              <Text
+                style={
+                  Object {
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Touchless Delivery
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "bottom": 50,
+                "opacity": -1.333333333333333,
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Custom Order
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#FFFFFFA6",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#171A20",
+                      },
+                    ]
+                  }
+                >
+                  Available Inventory
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "opacity": -3.666666666666664,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "display": "flex",
+                  "fontSize": 40,
+                  "fontWeight": "500",
+                  "paddingBottom": 5,
                 }
               }
             >
@@ -530,7 +548,7 @@ exports[`<CarsList /> renders correctly 1`] = `
               style={
                 Object {
                   "color": "#5c5e62",
-                  "fontSize": 16,
+                  "fontSize": 17,
                 }
               }
             >
@@ -551,6 +569,7 @@ exports[`<CarsList /> renders correctly 1`] = `
             style={
               Object {
                 "bottom": 50,
+                "opacity": -3.666666666666664,
                 "position": "absolute",
                 "width": "100%",
               }
@@ -595,7 +614,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -648,7 +667,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -658,7 +677,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                     ]
                   }
                 >
-                  Existing Inventory
+                  Available Inventory
                 </Text>
               </View>
             </View>
@@ -672,6 +691,7 @@ exports[`<CarsList /> renders correctly 1`] = `
         <View
           style={
             Object {
+              "flex": 1,
               "height": 1334,
               "width": "100%",
             }
@@ -713,6 +733,7 @@ exports[`<CarsList /> renders correctly 1`] = `
               Object {
                 "alignItems": "center",
                 "marginTop": "30%",
+                "opacity": -6.0000000000000036,
                 "width": "100%",
               }
             }
@@ -720,8 +741,10 @@ exports[`<CarsList /> renders correctly 1`] = `
             <Text
               style={
                 Object {
+                  "display": "flex",
                   "fontSize": 40,
                   "fontWeight": "500",
+                  "paddingBottom": 5,
                 }
               }
             >
@@ -731,7 +754,7 @@ exports[`<CarsList /> renders correctly 1`] = `
               style={
                 Object {
                   "color": "#5c5e62",
-                  "fontSize": 16,
+                  "fontSize": 17,
                 }
               }
             >
@@ -752,6 +775,7 @@ exports[`<CarsList /> renders correctly 1`] = `
             style={
               Object {
                 "bottom": 50,
+                "opacity": -6.0000000000000036,
                 "position": "absolute",
                 "width": "100%",
               }
@@ -796,7 +820,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -849,7 +873,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                   style={
                     Array [
                       Object {
-                        "fontSize": 12,
+                        "fontSize": 14,
                         "fontWeight": "500",
                         "textTransform": "uppercase",
                       },
@@ -859,7 +883,7 @@ exports[`<CarsList /> renders correctly 1`] = `
                     ]
                   }
                 >
-                  Existing Inventory
+                  Available Inventory
                 </Text>
               </View>
             </View>
