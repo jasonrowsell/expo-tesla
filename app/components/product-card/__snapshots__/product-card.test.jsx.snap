@@ -55,7 +55,7 @@ exports[`<CarCard /> renders correctly 1`] = `
       style={
         Object {
           "display": "flex",
-          "fontSize": 40,
+          "fontSize": 35,
           "fontWeight": "500",
           "paddingBottom": 5,
         }
@@ -72,22 +72,12 @@ exports[`<CarCard /> renders correctly 1`] = `
       }
     >
       tagline
-       
-      <Text
-        style={
-          Object {
-            "textDecorationLine": "underline",
-          }
-        }
-      >
-        taglineCTA
-      </Text>
     </Text>
   </View>
   <View
     style={
       Object {
-        "bottom": 70,
+        "bottom": 80,
         "opacity": undefined,
         "position": "absolute",
         "width": "100%",
@@ -143,60 +133,7 @@ exports[`<CarCard /> renders correctly 1`] = `
             ]
           }
         >
-          Custom Order
-        </Text>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "padding": 10,
-          "width": "100%",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 20,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            Object {
-              "backgroundColor": "#FFFFFFA6",
-            },
-          ]
-        }
-        testID="button"
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textTransform": "uppercase",
-              },
-              Object {
-                "color": "#171A20",
-              },
-            ]
-          }
-        >
-          Available Inventory
+          buttonContent
         </Text>
       </View>
     </View>

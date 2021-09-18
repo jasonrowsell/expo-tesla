@@ -8,8 +8,8 @@ import ButtonOption from '../button-option';
 
 const { height } = Dimensions.get('screen');
 
-export default function CarCard({
-  title, tagline, taglineCTA, image, scrollY, index,
+export default function ProductCard({
+  title, tagline, image, scrollY, index, buttonContent, termsLinks,
 }) {
   const inputRangeOpacity = [
     (index - 0.3) * height,
@@ -36,25 +36,24 @@ export default function CarCard({
         </Text>
         <Text style={styles.subtitle}>
           {tagline}
-          {' '}
-          <Text style={styles.subtitleCTA}>
-            {taglineCTA}
-          </Text>
         </Text>
       </Animated.View>
 
       <Animated.View style={[styles.buttonsContainer, { opacity }]}>
         <ButtonOption
           type="primary"
-          content="Custom Order"
-          onPress={() => Alert.alert('Custom order was pressed')}
-        />
-        <ButtonOption
-          type="secondary"
-          content="Available Inventory"
-          onPress={() => Alert.alert('Available inventory was pressed')}
+          content={buttonContent}
+          onPress={() => Alert.alert(`${buttonContent} was pressed`)}
         />
       </Animated.View>
+
+      { termsLinks && (
+        <Animated.View style={[styles.termsLinks, { opacity }]}>
+          <Text style={styles.terms}>
+            {tagline}
+          </Text>
+        </Animated.View>
+      )}
 
     </View>
   );
@@ -73,16 +72,13 @@ const styles = StyleSheet.create({
   },
   title: {
     display: 'flex',
-    fontSize: 40,
+    fontSize: 35,
     paddingBottom: 5,
     fontWeight: '500',
   },
   subtitle: {
     fontSize: 17,
     color: '#5c5e62',
-  },
-  subtitleCTA: {
-    textDecorationLine: 'underline',
   },
 
   image: {
@@ -94,25 +90,27 @@ const styles = StyleSheet.create({
 
   buttonsContainer: {
     position: 'absolute',
-    bottom: 70,
+    bottom: 80,
     width: '100%',
   },
 });
 
-CarCard.defaultProps = {
+ProductCard.defaultProps = {
   title: null,
   tagline: null,
-  taglineCTA: null,
   image: null,
   scrollY: null,
   index: null,
+  buttonContent: null,
+  termsLinks: false,
 };
 
-CarCard.propTypes = {
+ProductCard.propTypes = {
   title: PropTypes.string,
   tagline: PropTypes.string,
-  taglineCTA: PropTypes.string,
   image: PropTypes.node,
   scrollY: PropTypes.shape({}),
   index: PropTypes.number,
+  buttonContent: PropTypes.string,
+  termsLinks: PropTypes.bool,
 };
