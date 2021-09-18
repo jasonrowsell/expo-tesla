@@ -40,13 +40,13 @@ describe('<CarCard />', () => {
     expect(Alert.alert).toHaveBeenCalledWith('Custom order was pressed');
   });
 
-  test('existing inventory alert is displayed when existing inventory button is pressed', () => {
+  test('available inventory alert is displayed when available inventory button is pressed', () => {
     jest.spyOn(Alert, 'alert');
     const { getByText } = renderComponent();
 
-    const button = getByText('Existing Inventory');
+    const button = getByText('Available Inventory');
     fireEvent.press(button);
 
-    expect(Alert.alert).toHaveBeenCalledWith('Existing inventory was pressed');
+    expect(Alert.alert).toHaveBeenCalledWith('Available inventory was pressed');
   });
 });

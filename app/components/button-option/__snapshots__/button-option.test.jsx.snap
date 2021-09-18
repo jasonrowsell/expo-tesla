@@ -40,7 +40,7 @@ exports[`<ButtonOption /> renders correctly 1`] = `
       style={
         Array [
           Object {
-            "fontSize": 12,
+            "fontSize": 14,
             "fontWeight": "500",
             "textTransform": "uppercase",
           },

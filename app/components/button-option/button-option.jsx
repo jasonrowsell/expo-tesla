@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: '500',
     textTransform: 'uppercase',
   },

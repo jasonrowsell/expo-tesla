@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
-  View, StyleSheet, FlatList, Dimensions,
+  View, StyleSheet, Dimensions, Animated,
 } from 'react-native';
+
 import CarCard from '../car-card';
 import cars from './cars';
 
 export default function CarsList() {
+  const scrollY = useRef(new Animated.Value(0)).current;
   return (
     <View style={styles.container}>
-      <FlatList
+      <Animated.FlatList
         data={cars}
         renderItem={
-          ({ item }) => (
-            <CarCard
-              title={item.title}
-              tagline={item.tagline}
-              taglineCTA={item.taglineCTA}
-              image={item.image}
-            />
+          ({ item, index }) => (
+            /* eslint-disable react/jsx-props-no-spreading */
+            <CarCard {...item} index={index} scrollY={scrollY} />
           )
         }
         keyExtractor={(item, index) => String(index)}
@@ -26,6 +24,12 @@ export default function CarsList() {
         decelerationRate="fast"
         snapToInterval={Dimensions.get('screen').height}
         alwaysBounceVertical
+        scrollY={scrollY}
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          { useNativeDriver: false },
+        )}
+        scrollEventThrottle={16}
       />
     </View>
   );

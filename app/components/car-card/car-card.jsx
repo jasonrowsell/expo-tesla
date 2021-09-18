@@ -1,14 +1,28 @@
 import React from 'react';
 import {
-  View, Text, ImageBackground, StyleSheet, Alert, Dimensions,
+  View, Text, ImageBackground, StyleSheet, Alert, Dimensions, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
 import ButtonOption from '../button-option';
 
+const { height } = Dimensions.get('screen');
+
 export default function CarCard({
-  title, tagline, taglineCTA, image,
+  title, tagline, taglineCTA, image, scrollY, index,
 }) {
+  const inputRangeOpacity = [
+    (index - 0.3) * height,
+    index * height,
+    (index + 0.3) * height,
+  ];
+
+  // eslint-disable-next-line react/prop-types
+  const opacity = scrollY?.interpolate({
+    inputRange: inputRangeOpacity,
+    outputRange: [0.3, 1, 0.3],
+  });
+
   return (
     <View style={styles.carContainer}>
       <ImageBackground
@@ -16,8 +30,10 @@ export default function CarCard({
         style={styles.image}
       />
 
-      <View style={styles.header}>
-        <Text style={styles.title}>{title}</Text>
+      <Animated.View style={[styles.header, { opacity }]}>
+        <Text style={styles.title}>
+          {title}
+        </Text>
         <Text style={styles.subtitle}>
           {tagline}
           {' '}
@@ -25,10 +41,9 @@ export default function CarCard({
             {taglineCTA}
           </Text>
         </Text>
+      </Animated.View>
 
-      </View>
-
-      <View style={styles.buttonsContainer}>
+      <Animated.View style={[styles.buttonsContainer, { opacity }]}>
         <ButtonOption
           type="primary"
           content="Custom Order"
@@ -36,10 +51,10 @@ export default function CarCard({
         />
         <ButtonOption
           type="secondary"
-          content="Existing Inventory"
-          onPress={() => Alert.alert('Existing inventory was pressed')}
+          content="Available Inventory"
+          onPress={() => Alert.alert('Available inventory was pressed')}
         />
-      </View>
+      </Animated.View>
 
     </View>
   );
@@ -47,6 +62,7 @@ export default function CarCard({
 
 const styles = StyleSheet.create({
   carContainer: {
+    flex: 1,
     width: '100%',
     height: Dimensions.get('screen').height,
   },
@@ -56,11 +72,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
+    display: 'flex',
     fontSize: 40,
+    paddingBottom: 5,
     fontWeight: '500',
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 17,
     color: '#5c5e62',
   },
   subtitleCTA: {
@@ -86,6 +104,8 @@ CarCard.defaultProps = {
   tagline: null,
   taglineCTA: null,
   image: null,
+  scrollY: null,
+  index: null,
 };
 
 CarCard.propTypes = {
@@ -93,4 +113,6 @@ CarCard.propTypes = {
   tagline: PropTypes.string,
   taglineCTA: PropTypes.string,
   image: PropTypes.node,
+  scrollY: PropTypes.shape({}),
+  index: PropTypes.number,
 };

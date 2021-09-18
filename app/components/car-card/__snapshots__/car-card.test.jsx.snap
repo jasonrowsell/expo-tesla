@@ -4,6 +4,7 @@ exports[`<CarCard /> renders correctly 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "height": 1334,
       "width": "100%",
     }
@@ -45,6 +46,7 @@ exports[`<CarCard /> renders correctly 1`] = `
       Object {
         "alignItems": "center",
         "marginTop": "30%",
+        "opacity": undefined,
         "width": "100%",
       }
     }
@@ -52,8 +54,10 @@ exports[`<CarCard /> renders correctly 1`] = `
     <Text
       style={
         Object {
+          "display": "flex",
           "fontSize": 40,
           "fontWeight": "500",
+          "paddingBottom": 5,
         }
       }
     >
@@ -63,7 +67,7 @@ exports[`<CarCard /> renders correctly 1`] = `
       style={
         Object {
           "color": "#5c5e62",
-          "fontSize": 16,
+          "fontSize": 17,
         }
       }
     >
@@ -84,6 +88,7 @@ exports[`<CarCard /> renders correctly 1`] = `
     style={
       Object {
         "bottom": 50,
+        "opacity": undefined,
         "position": "absolute",
         "width": "100%",
       }
@@ -128,7 +133,7 @@ exports[`<CarCard /> renders correctly 1`] = `
           style={
             Array [
               Object {
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textTransform": "uppercase",
               },
@@ -181,7 +186,7 @@ exports[`<CarCard /> renders correctly 1`] = `
           style={
             Array [
               Object {
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textTransform": "uppercase",
               },
@@ -191,7 +196,7 @@ exports[`<CarCard /> renders correctly 1`] = `
             ]
           }
         >
-          Existing Inventory
+          Available Inventory
         </Text>
       </View>
     </View>
