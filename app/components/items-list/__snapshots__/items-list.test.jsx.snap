@@ -47,6 +47,13 @@ exports[`<ItemsList /> renders correctly 1`] = `
           "title": "Model Y",
           "type": "car",
         },
+        Object {
+          "buttonContent": "Shop now",
+          "image": 1,
+          "termsLinks": true,
+          "title": "Accessories",
+          "type": "product",
+        },
       ]
     }
     decelerationRate="fast"
@@ -496,6 +503,7 @@ exports[`<ItemsList /> renders correctly 1`] = `
         <View
           style={
             Object {
+              "display": "flex",
               "flex": 1,
               "height": 1334,
               "width": "100%",
@@ -569,9 +577,9 @@ exports[`<ItemsList /> renders correctly 1`] = `
           <View
             style={
               Object {
-                "bottom": 80,
+                "display": "flex",
+                "marginTop": 500,
                 "opacity": -3.666666666666664,
-                "position": "absolute",
                 "width": "100%",
               }
             }
@@ -1041,6 +1049,204 @@ exports[`<ItemsList /> renders correctly 1`] = `
                 </Text>
               </View>
             </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "display": "flex",
+              "flex": 1,
+              "height": 1334,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              Object {
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "cover",
+                "width": "100%",
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Array [
+                  Object {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": "30%",
+                "opacity": -10.666666666666671,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "display": "flex",
+                  "fontSize": 35,
+                  "fontWeight": "500",
+                  "paddingBottom": 5,
+                }
+              }
+            >
+              Accessories
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#5c5e62",
+                  "fontSize": 17,
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "display": "flex",
+                "marginTop": 400,
+                "opacity": -10.666666666666671,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "padding": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "borderRadius": 20,
+                      "height": 40,
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "backgroundColor": "#171A20CC",
+                    },
+                  ]
+                }
+                testID="button"
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "500",
+                        "textTransform": "uppercase",
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Shop now
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "marginTop": 70,
+                "opacity": -10.666666666666671,
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#46484d",
+                  "fontSize": 15,
+                  "margin": 5,
+                }
+              }
+            >
+              Tesla © 2021
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#46484d",
+                  "fontSize": 15,
+                  "margin": 5,
+                }
+              }
+            >
+              Privacy & Legal
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#46484d",
+                  "fontSize": 15,
+                  "margin": 5,
+                }
+              }
+            >
+              Careers
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#46484d",
+                  "fontSize": 15,
+                  "margin": 5,
+                }
+              }
+            >
+              News
+            </Text>
           </View>
         </View>
       </View>

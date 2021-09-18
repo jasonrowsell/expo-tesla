@@ -4,7 +4,7 @@ module.exports = {
   collectCoverage: true,
 
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    '**/*.{jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!**/coverage/**',

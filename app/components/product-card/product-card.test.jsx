@@ -12,7 +12,7 @@ describe('<CarCard />', () => {
 
   test('has 3 children', () => {
     const tree = renderer.create(
-      <ProductCard title="title" tagline="tagline" buttonContent="buttonContent" source="img" />
+      <ProductCard title="title" tagline="tagline" buttonContent="buttonContent" source="img" />,
     ).toJSON();
     expect(tree.children.length).toBe(3);
   });
@@ -35,5 +35,16 @@ describe('<CarCard />', () => {
     fireEvent.press(button);
 
     expect(Alert.alert).toHaveBeenCalledWith('buttonContent was pressed');
+  });
+
+  test('renders terms links', () => {
+    const { getByText } = render(
+      <ProductCard title="title" tagline="tagline" buttonContent="buttonContent" source="img" termsLinks />,
+    );
+
+    getByText('Tesla © 2021');
+    getByText('Privacy & Legal');
+    getByText('Careers');
+    getByText('News');
   });
 });

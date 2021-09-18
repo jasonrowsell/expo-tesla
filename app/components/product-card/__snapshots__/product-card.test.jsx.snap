@@ -4,6 +4,7 @@ exports[`<CarCard /> renders correctly 1`] = `
 <View
   style={
     Object {
+      "display": "flex",
       "flex": 1,
       "height": 1334,
       "width": "100%",
@@ -77,9 +78,9 @@ exports[`<CarCard /> renders correctly 1`] = `
   <View
     style={
       Object {
-        "bottom": 80,
+        "display": "flex",
+        "marginTop": 500,
         "opacity": undefined,
-        "position": "absolute",
         "width": "100%",
       }
     }
