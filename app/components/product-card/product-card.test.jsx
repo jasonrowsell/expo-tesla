@@ -42,7 +42,7 @@ describe('<CarCard />', () => {
       <ProductCard title="title" tagline="tagline" buttonContent="buttonContent" source="img" termsLinks />,
     );
 
-    getByText('Tesla © 2021');
+    getByText('Jason Rowsell © 2021');
     getByText('Privacy & Legal');
     getByText('Careers');
     getByText('News');

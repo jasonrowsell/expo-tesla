@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Overlay /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "black",
+      "flex": 1,
+      "height": 1334,
+      "left": 0,
+      "opacity": 0.8,
+      "position": "absolute",
+      "top": -50,
+      "width": 750,
+    }
+  }
+>
+  <Text>
+    My Content
+  </Text>
+</View>
+`;

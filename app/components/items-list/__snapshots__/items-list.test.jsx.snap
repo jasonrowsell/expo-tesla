@@ -1212,7 +1212,7 @@ exports[`<ItemsList /> renders correctly 1`] = `
                 }
               }
             >
-              Tesla © 2021
+              Jason Rowsell © 2021
             </Text>
             <Text
               style={
