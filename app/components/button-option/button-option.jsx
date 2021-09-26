@@ -4,6 +4,16 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
+/**
+ * Button component for selecting an option, will render a style of either
+ * primary or secondary based on the received prop.
+ *
+ * @param {string} type optional styling for the button
+ * @param {string} content string that is displayed inside of the button
+ * @param {function} onPress functionality provided when button is clicked
+ *
+ * @return {JSX.Element}
+ */
 export default function ButtonOption({ type, content, onPress }) {
   const backgroundColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
   const color = type === 'primary' ? '#FFFFFF' : '#171A20';
@@ -20,6 +30,17 @@ export default function ButtonOption({ type, content, onPress }) {
     </View>
   );
 }
+
+ButtonOption.defaultProps = {
+  type: null,
+  content: null,
+};
+
+ButtonOption.propTypes = {
+  type: PropTypes.string,
+  content: PropTypes.string,
+  onPress: PropTypes.func.isRequired,
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -38,14 +59,3 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
 });
-
-ButtonOption.defaultProps = {
-  type: null,
-  content: null,
-};
-
-ButtonOption.propTypes = {
-  type: PropTypes.string,
-  content: PropTypes.string,
-  onPress: PropTypes.func.isRequired,
-};

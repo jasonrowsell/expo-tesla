@@ -8,6 +8,20 @@ import ButtonOption from '../button-option';
 
 const { height } = Dimensions.get('screen');
 
+/**
+ * Card component that wraps product details, will change opacity in
+ * relation to its screen y-coordinate.
+ *
+ * @param {string} title Title of the product
+ * @param {string} tagline Follow-up subtitle in regards to the product
+ * @param {node} image Image of the product
+ * @param {object} scrollY Current y-coordinate position on the screen
+ * @param {number} index nth value in the list of items
+ * @param {string} buttonContent String that is displayed inside of the button
+ * @param {boolean} termsLinks Optional rendering of footer links
+ *
+ * @return {JSX.Element}
+ */
 export default function ProductCard({
   title, tagline, image, scrollY, index, buttonContent, termsLinks,
 }) {
@@ -52,7 +66,7 @@ export default function ProductCard({
       { termsLinks && (
         <Animated.View style={[styles.termsLinks, { opacity }]}>
           <Text style={styles.terms}>
-            Tesla © 2021
+            Jason Rowsell © 2021
           </Text>
           <Text style={styles.terms}>
             Privacy & Legal
@@ -68,6 +82,26 @@ export default function ProductCard({
     </View>
   );
 }
+
+ProductCard.defaultProps = {
+  title: null,
+  tagline: null,
+  image: null,
+  scrollY: null,
+  index: null,
+  buttonContent: null,
+  termsLinks: false,
+};
+
+ProductCard.propTypes = {
+  title: PropTypes.string,
+  tagline: PropTypes.string,
+  image: PropTypes.node,
+  scrollY: PropTypes.shape({}),
+  index: PropTypes.number,
+  buttonContent: PropTypes.string,
+  termsLinks: PropTypes.bool,
+};
 
 const styles = StyleSheet.create({
   carContainer: {
@@ -122,23 +156,3 @@ const styles = StyleSheet.create({
     margin: 5,
   },
 });
-
-ProductCard.defaultProps = {
-  title: null,
-  tagline: null,
-  image: null,
-  scrollY: null,
-  index: null,
-  buttonContent: null,
-  termsLinks: false,
-};
-
-ProductCard.propTypes = {
-  title: PropTypes.string,
-  tagline: PropTypes.string,
-  image: PropTypes.node,
-  scrollY: PropTypes.shape({}),
-  index: PropTypes.number,
-  buttonContent: PropTypes.string,
-  termsLinks: PropTypes.bool,
-};

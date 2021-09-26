@@ -8,6 +8,19 @@ import ButtonOption from '../button-option';
 
 const { height } = Dimensions.get('screen');
 
+/**
+ * Card component that wraps car model details, will change opacity in
+ * relation to its screen y-coordinate.
+ *
+ * @param {string} title Title of the car model
+ * @param {string} tagline Follow-up subtitle in regards to the car model
+ * @param {string} taglineCTA Appended CTA with ref link
+ * @param {node} image Image of the car model
+ * @param {object} scrollY Current y-coordinate position on the screen
+ * @param {number} index nth value in the list of items
+ *
+ * @return {JSX.Element}
+ */
 export default function CarCard({
   title, tagline, taglineCTA, image, scrollY, index,
 }) {
@@ -60,6 +73,24 @@ export default function CarCard({
   );
 }
 
+CarCard.defaultProps = {
+  title: null,
+  tagline: null,
+  taglineCTA: null,
+  image: null,
+  scrollY: null,
+  index: null,
+};
+
+CarCard.propTypes = {
+  title: PropTypes.string,
+  tagline: PropTypes.string,
+  taglineCTA: PropTypes.string,
+  image: PropTypes.node,
+  scrollY: PropTypes.shape({}),
+  index: PropTypes.number,
+};
+
 const styles = StyleSheet.create({
   carContainer: {
     flex: 1,
@@ -98,21 +129,3 @@ const styles = StyleSheet.create({
     width: '100%',
   },
 });
-
-CarCard.defaultProps = {
-  title: null,
-  tagline: null,
-  taglineCTA: null,
-  image: null,
-  scrollY: null,
-  index: null,
-};
-
-CarCard.propTypes = {
-  title: PropTypes.string,
-  tagline: PropTypes.string,
-  taglineCTA: PropTypes.string,
-  image: PropTypes.node,
-  scrollY: PropTypes.shape({}),
-  index: PropTypes.number,
-};
