@@ -4,11 +4,10 @@ exports[`<Overlay /> renders correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "black",
+      "backgroundColor": "rgba(0, 0, 0, 0.5)",
       "flex": 1,
       "height": 1334,
       "left": 0,
-      "opacity": 0.8,
       "position": "absolute",
       "top": -50,
       "width": 750,

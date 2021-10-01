@@ -107,30 +107,33 @@ const styles = StyleSheet.create({
   carContainer: {
     display: 'flex',
     flex: 1,
-    width: '100%',
     height: Dimensions.get('screen').height,
+    width: '100%',
   },
+
   header: {
+    alignItems: 'center',
     marginTop: '30%',
     width: '100%',
-    alignItems: 'center',
   },
+
   title: {
     display: 'flex',
     fontSize: 35,
-    paddingBottom: 5,
     fontWeight: '500',
+    paddingBottom: 5,
   },
+
   subtitle: {
-    fontSize: 17,
     color: '#5c5e62',
+    fontSize: 17,
   },
 
   image: {
-    width: '100%',
     height: '100%',
-    resizeMode: 'cover',
     position: 'absolute',
+    resizeMode: 'cover',
+    width: '100%',
   },
 
   buttonsContainerTerms: {
@@ -138,6 +141,7 @@ const styles = StyleSheet.create({
     marginTop: 400,
     width: '100%',
   },
+
   buttonsContainer: {
     display: 'flex',
     marginTop: 500,
@@ -145,14 +149,15 @@ const styles = StyleSheet.create({
   },
 
   termsLinks: {
-    display: 'flex',
-    width: '100%',
-    marginTop: 70,
     alignItems: 'center',
+    display: 'flex',
+    marginTop: 70,
+    width: '100%',
   },
+
   terms: {
-    fontSize: 15,
     color: '#46484d',
+    fontSize: 15,
     margin: 5,
   },
 });

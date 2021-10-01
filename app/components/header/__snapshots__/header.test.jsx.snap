@@ -24,15 +24,27 @@ exports[`<Header /> renders correctly 1`] = `
       }
     }
   />
-  <Image
-    source={1}
-    style={
-      Object {
-        "height": 25,
-        "resizeMode": "contain",
-        "width": 25,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "height": 25,
+          "resizeMode": "contain",
+          "width": 25,
+        }
       }
-    }
-  />
+    />
+  </View>
 </View>
 `;

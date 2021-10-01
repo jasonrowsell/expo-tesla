@@ -94,38 +94,42 @@ CarCard.propTypes = {
 const styles = StyleSheet.create({
   carContainer: {
     flex: 1,
-    width: '100%',
     height: Dimensions.get('screen').height,
+    width: '100%',
   },
+
   header: {
+    alignItems: 'center',
     marginTop: '30%',
     width: '100%',
-    alignItems: 'center',
   },
+
   title: {
     display: 'flex',
     fontSize: 40,
-    paddingBottom: 5,
     fontWeight: '500',
+    paddingBottom: 5,
   },
+
   subtitle: {
-    fontSize: 17,
     color: '#5c5e62',
+    fontSize: 17,
   },
+
   subtitleCTA: {
     textDecorationLine: 'underline',
   },
 
   image: {
-    width: '100%',
     height: '100%',
-    resizeMode: 'cover',
     position: 'absolute',
+    resizeMode: 'cover',
+    width: '100%',
   },
 
   buttonsContainer: {
-    position: 'absolute',
     bottom: 70,
+    position: 'absolute',
     width: '100%',
   },
 });

@@ -47,12 +47,14 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: 10,
   },
+
   button: {
-    height: 40,
-    borderRadius: 20,
-    justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 20,
+    height: 40,
+    justifyContent: 'center',
   },
+
   text: {
     fontSize: 14,
     fontWeight: '500',

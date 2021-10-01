@@ -47,13 +47,12 @@ Overlay.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
-    top: -50,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     flex: 1,
-    position: 'absolute',
-    left: 0,
-    opacity: 0.8,
-    backgroundColor: 'black',
-    width,
     height,
+    left: 0,
+    position: 'absolute',
+    top: -50,
+    width,
   },
 });

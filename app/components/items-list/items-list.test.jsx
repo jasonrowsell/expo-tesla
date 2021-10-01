@@ -11,7 +11,7 @@ describe('<ItemsList />', () => {
   });
 
   test('renders correctly', () => {
-    const tree = render(<ItemsList />);
+    const tree = render(<ItemsList title="title" tagline="tagline" source="img" />);
     expect(tree).toMatchSnapshot();
   });
 });

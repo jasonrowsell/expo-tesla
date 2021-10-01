@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemsList /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgba(0, 0, 0, 0.5)",
+      "flex": 1,
+      "height": 1334,
+      "left": 0,
+      "position": "absolute",
+      "top": -50,
+      "width": 750,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "elevation": 2,
+        "flex": 1,
+        "height": "100%",
+        "marginLeft": "auto",
+        "marginRight": 0,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.5,
+        "shadowRadius": 5,
+        "width": 320,
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "flex-end",
+          "paddingHorizontal": 20,
+          "top": 50,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Image
+          source={1}
+          style={
+            Object {
+              "height": 25,
+              "resizeMode": "contain",
+              "width": 25,
+            }
+          }
+        />
+      </View>
+    </View>
+    <Text>
+      My Content
+    </Text>
+  </View>
+</View>
+`;
