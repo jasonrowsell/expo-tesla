@@ -23,7 +23,7 @@ const { height } = Dimensions.get('screen');
  * @return {JSX.Element}
  */
 export default function ProductCard({
-  title, tagline, image, scrollY, index, buttonContent, termsLinks,
+  title, tagline, image, scrollY, index, termsLinks,
 }) {
   const inputRangeOpacity = [
     (index - 0.3) * height,
@@ -36,6 +36,8 @@ export default function ProductCard({
     inputRange: inputRangeOpacity,
     outputRange: [0.3, 1, 0.3],
   });
+
+  const primaryContent = termsLinks ? 'Shop Now' : 'Order Now';
 
   return (
     <View style={styles.carContainer}>
@@ -58,9 +60,16 @@ export default function ProductCard({
       >
         <ButtonOption
           type="primary"
-          content={buttonContent}
-          onPress={() => Alert.alert(`${buttonContent} was pressed`)}
+          content={primaryContent}
+          onPress={() => Alert.alert(`${primaryContent} was pressed`)}
         />
+        { !termsLinks && (
+          <ButtonOption
+            type="secondary"
+            content="Learn More"
+            onPress={() => Alert.alert('Learn More was pressed')}
+          />
+        )}
       </Animated.View>
 
       { termsLinks && (
@@ -143,8 +152,8 @@ const styles = StyleSheet.create({
   },
 
   buttonsContainer: {
-    display: 'flex',
-    marginTop: 500,
+    bottom: 70,
+    position: 'absolute',
     width: '100%',
   },
 

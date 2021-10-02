@@ -60,12 +60,12 @@ export default function CarCard({
         <ButtonOption
           type="primary"
           content="Custom Order"
-          onPress={() => Alert.alert('Custom order was pressed')}
+          onPress={() => Alert.alert('Custom Order was pressed')}
         />
         <ButtonOption
           type="secondary"
-          content="Available Inventory"
-          onPress={() => Alert.alert('Available inventory was pressed')}
+          content="Existing Inventory"
+          onPress={() => Alert.alert('Existing Inventory was pressed')}
         />
       </Animated.View>
 
