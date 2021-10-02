@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import {
-  View, Image, StyleSheet, TouchableOpacity, ScrollView, Text,
+  View, Image, StyleSheet, TouchableOpacity,
 } from 'react-native';
-import menuLinks from './menu-links';
 
 import MenuModal from '../menu-modal';
+import MenuItems from '../menu-items';
 
 export default function Header() {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -17,13 +17,7 @@ export default function Header() {
     <View style={styles.container}>
       { isModalVisible && (
         <MenuModal onClose={() => setModalVisible(false)}>
-          <ScrollView style={styles.scrollView}>
-            {menuLinks.map((link) => (
-              <Text key={link} style={styles.linkText}>
-                {link}
-              </Text>
-            ))}
-          </ScrollView>
+          <MenuItems />
         </MenuModal>
       )}
 

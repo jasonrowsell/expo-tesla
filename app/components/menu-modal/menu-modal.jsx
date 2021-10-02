@@ -56,9 +56,7 @@ export default function MenuModal({ children, onClose }) {
             <Image style={styles.closeIcon} source={require('../../assets/images/close.png')} />
           </TouchableOpacity>
         </View>
-        <View style={styles.children}>
-          {children}
-        </View>
+        {children}
       </Animated.View>
     </Overlay>
   );
@@ -83,13 +81,6 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     width: 310,
     zIndex: 1,
-  },
-
-  children: {
-    display: 'flex',
-    paddingLeft: 40,
-    marginTop: 100,
-    marginBottom: 40,
   },
 
   iconContainer: {
