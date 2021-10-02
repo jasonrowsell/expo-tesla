@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {
-  View, Image, StyleSheet, TouchableHighlight,
+  View, Image, StyleSheet, TouchableOpacity, ScrollView, Text,
 } from 'react-native';
+import menuLinks from './menu-links';
 
 import MenuModal from '../menu-modal';
 
@@ -15,15 +16,23 @@ export default function Header() {
   return (
     <View style={styles.container}>
       { isModalVisible && (
-        <MenuModal onClose={() => setModalVisible(false)} />
+        <MenuModal onClose={() => setModalVisible(false)}>
+          <ScrollView style={styles.scrollView}>
+            {menuLinks.map((link) => (
+              <Text key={link} style={styles.linkText}>
+                {link}
+              </Text>
+            ))}
+          </ScrollView>
+        </MenuModal>
       )}
 
       { !isModalVisible && (
         <>
           <Image style={styles.logo} source={require('../../assets/images/logo.png')} />
-          <TouchableHighlight onPress={() => handleModal()}>
+          <TouchableOpacity onPress={() => handleModal()} style={styles.iconContainer}>
             <Image style={styles.menuIcon} source={require('../../assets/images/menu.png')} />
-          </TouchableHighlight>
+          </TouchableOpacity>
         </>
       )}
     </View>
@@ -47,9 +56,21 @@ const styles = StyleSheet.create({
     width: 100,
   },
 
+  iconContainer: {
+    height: 30,
+    width: 30,
+  },
+
   menuIcon: {
     width: 25,
     height: 25,
     resizeMode: 'contain',
+  },
+
+  linkText: {
+    fontSize: 18,
+    fontWeight: '500',
+    marginBottom: 30,
+    color: 'rgb(57, 60, 65)',
   },
 });

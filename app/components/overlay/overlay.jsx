@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
-  View, StyleSheet, Dimensions,
+  StyleSheet, Dimensions, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -15,22 +15,29 @@ const { width, height } = Dimensions.get('screen');
  * @return {JSX.Element}
  */
 export default function Overlay({ children, open }) {
-  const [shouldRenderOverlay, setShouldRenderOverlay] = useState(open);
+  const [shouldRenderOverlay] = useState(open);
+
+  const animatedValue = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     if (open) {
-      setShouldRenderOverlay(true);
-    } else {
-      setShouldRenderOverlay(false);
+      Animated.timing(
+        animatedValue,
+        {
+          toValue: 1,
+          duration: 250,
+          useNativeDriver: false,
+        },
+      ).start();
     }
   }, [open]);
 
   return (
     <>
       {shouldRenderOverlay && (
-        <View style={styles.container}>
+        <Animated.View style={[styles.container, { opacity: animatedValue }]}>
           {children}
-        </View>
+        </Animated.View>
       )}
     </>
   );
