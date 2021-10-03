@@ -22,31 +22,31 @@ describe('<CarCard />', () => {
 
   test('has the title', () => {
     const { getByText } = renderComponent();
-    getByText('title');
+    expect(getByText('title')).toBeTruthy();
   });
 
   test('has the tagline followed by the CTA', () => {
     const { getByText } = renderComponent();
-    getByText('tagline taglineCTA');
+    expect(getByText('tagline taglineCTA')).toBeTruthy();
   });
 
-  test('custom order alert is displayed when custom order button is pressed', () => {
+  test('custom order alert is displayed when custom order button is pressed', async () => {
     jest.spyOn(Alert, 'alert');
     const { getByText } = renderComponent();
 
     const button = getByText('Custom Order');
     fireEvent.press(button);
 
-    expect(Alert.alert).toHaveBeenCalledWith('Custom order was pressed');
+    await expect(Alert.alert).toHaveBeenCalledWith('Custom Order was pressed');
   });
 
-  test('available inventory alert is displayed when available inventory button is pressed', () => {
+  test('available inventory alert is displayed when existing inventory button is pressed', async () => {
     jest.spyOn(Alert, 'alert');
     const { getByText } = renderComponent();
 
-    const button = getByText('Available Inventory');
+    const button = getByText('Existing Inventory');
     fireEvent.press(button);
 
-    expect(Alert.alert).toHaveBeenCalledWith('Available inventory was pressed');
+    await expect(Alert.alert).toHaveBeenCalledWith('Existing Inventory was pressed');
   });
 });

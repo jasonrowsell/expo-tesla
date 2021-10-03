@@ -1,21 +1,39 @@
-export default [
-  'Model S',
-  'Model 3',
-  'Model X',
-  'Model Y',
-  'Solar Roof',
-  'Solar Panels',
-  'Existing Inventor',
-  'Used Inventory',
-  'Trade-In',
-  'Test Drive',
-  'Powerwall',
-  'Commercial Energy',
-  'Utilities',
-  'Charging',
-  'Find Us',
-  'Support',
-  'Investor Relations',
-  'Shop',
-  'Account',
-];
+export default [{
+  title: 'Model S',
+}, {
+  title: 'Model 3',
+}, {
+  title: 'Model X',
+}, {
+  title: 'Model Y',
+}, {
+  title: 'Solar Roof',
+}, {
+  title: 'Solar Panels',
+}, {
+  title: 'Existing Inventory',
+}, {
+  title: 'Used Inventory',
+}, {
+  title: 'Trade-In',
+}, {
+  title: 'Test Drive',
+}, {
+  title: 'Powerwall',
+}, {
+  title: 'Commercial Energy',
+}, {
+  title: 'Utilities',
+}, {
+  title: 'Charging',
+}, {
+  title: 'Find Us',
+}, {
+  title: 'Support',
+}, {
+  title: 'Investor Relations',
+}, {
+  title: 'Shop',
+}, {
+  title: 'Account',
+}];

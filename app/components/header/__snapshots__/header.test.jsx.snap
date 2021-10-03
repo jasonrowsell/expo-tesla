@@ -34,6 +34,14 @@ exports[`<Header /> renders correctly 1`] = `
     onResponderTerminate={[Function]}
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 30,
+        "opacity": 1,
+        "width": 30,
+      }
+    }
+    testID="menu-icon"
   >
     <Image
       source={1}

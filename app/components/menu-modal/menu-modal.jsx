@@ -52,7 +52,7 @@ export default function MenuModal({ children, onClose }) {
       }]}
       >
         <View style={styles.modalHeader}>
-          <TouchableOpacity onPress={() => handleClose()} style={styles.iconContainer}>
+          <TouchableOpacity onPress={() => handleClose()} style={styles.iconContainer} testID="close-icon">
             <Image style={styles.closeIcon} source={require('../../assets/images/close.png')} />
           </TouchableOpacity>
         </View>

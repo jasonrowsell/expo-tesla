@@ -196,7 +196,7 @@ exports[`<CarCard /> renders correctly 1`] = `
             ]
           }
         >
-          Available Inventory
+          Existing Inventory
         </Text>
       </View>
     </View>

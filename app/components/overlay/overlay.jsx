@@ -35,9 +35,9 @@ export default function Overlay({ children, open }) {
   return (
     <>
       {shouldRenderOverlay && (
-        <Animated.View style={[styles.container, { opacity: animatedValue }]}>
-          {children}
-        </Animated.View>
+      <Animated.View style={[styles.container, { opacity: animatedValue }]}>
+        {children}
+      </Animated.View>
       )}
     </>
   );

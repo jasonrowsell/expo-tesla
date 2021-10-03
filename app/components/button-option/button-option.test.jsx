@@ -23,7 +23,7 @@ describe('<ButtonOption />', () => {
     const onPress = jest.fn();
     const { getByText } = render(<ButtonOption type="primary" content="content" onPress={onPress} />);
 
-    getByText('content');
+    expect(getByText('content')).toBeTruthy();
   });
 
   test('calls onPress function once clicked', () => {

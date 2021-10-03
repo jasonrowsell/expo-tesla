@@ -78,9 +78,9 @@ exports[`<CarCard /> renders correctly 1`] = `
   <View
     style={
       Object {
-        "display": "flex",
-        "marginTop": 500,
+        "bottom": 70,
         "opacity": undefined,
+        "position": "absolute",
         "width": "100%",
       }
     }
@@ -134,7 +134,60 @@ exports[`<CarCard /> renders correctly 1`] = `
             ]
           }
         >
-          buttonContent
+          Order Now
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "padding": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderRadius": 20,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#FFFFFFA6",
+            },
+          ]
+        }
+        testID="button"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 14,
+                "fontWeight": "500",
+                "textTransform": "uppercase",
+              },
+              Object {
+                "color": "#171A20",
+              },
+            ]
+          }
+        >
+          Learn More
         </Text>
       </View>
     </View>

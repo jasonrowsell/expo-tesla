@@ -6,6 +6,12 @@ import {
 import MenuModal from '../menu-modal';
 import MenuItems from '../menu-items';
 
+/**
+ * Sticky header component for displaying the logo and the menu icon,
+ * the menu opens to a nav menu
+ *
+ * @return {JSX.Element}
+ */
 export default function Header() {
   const [isModalVisible, setModalVisible] = useState(false);
 
@@ -15,16 +21,14 @@ export default function Header() {
 
   return (
     <View style={styles.container}>
-      { isModalVisible && (
+      { isModalVisible ? (
         <MenuModal onClose={() => setModalVisible(false)}>
           <MenuItems />
         </MenuModal>
-      )}
-
-      { !isModalVisible && (
+      ) : (
         <>
           <Image style={styles.logo} source={require('../../assets/images/logo.png')} />
-          <TouchableOpacity onPress={() => handleModal()} style={styles.iconContainer}>
+          <TouchableOpacity onPress={() => handleModal()} style={styles.iconContainer} testID="menu-icon">
             <Image style={styles.menuIcon} source={require('../../assets/images/menu.png')} />
           </TouchableOpacity>
         </>

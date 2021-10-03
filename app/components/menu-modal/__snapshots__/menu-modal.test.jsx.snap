@@ -8,6 +8,7 @@ exports[`<ItemsList /> renders correctly 1`] = `
       "flex": 1,
       "height": 1334,
       "left": 0,
+      "opacity": 0,
       "position": "absolute",
       "top": -50,
       "width": 750,
@@ -18,6 +19,7 @@ exports[`<ItemsList /> renders correctly 1`] = `
     style={
       Object {
         "backgroundColor": "white",
+        "display": "flex",
         "elevation": 2,
         "flex": 1,
         "height": "100%",
@@ -26,7 +28,12 @@ exports[`<ItemsList /> renders correctly 1`] = `
         "shadowColor": "#000",
         "shadowOpacity": 0.5,
         "shadowRadius": 5,
-        "width": 320,
+        "transform": Array [
+          Object {
+            "translateX": 150,
+          },
+        ],
+        "width": 310,
         "zIndex": 1,
       }
     }
@@ -34,6 +41,7 @@ exports[`<ItemsList /> renders correctly 1`] = `
     <View
       style={
         Object {
+          "display": "flex",
           "flexDirection": "row",
           "justifyContent": "flex-end",
           "paddingHorizontal": 20,
@@ -52,14 +60,22 @@ exports[`<ItemsList /> renders correctly 1`] = `
         onResponderTerminate={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": 30,
+            "opacity": 1,
+            "width": 30,
+          }
+        }
+        testID="close-icon"
       >
         <Image
           source={1}
           style={
             Object {
-              "height": 25,
+              "height": 20,
               "resizeMode": "contain",
-              "width": 25,
+              "width": 20,
             }
           }
         />
