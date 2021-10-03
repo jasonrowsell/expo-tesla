@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import ItemsList from './app/components/items-list';
-import Header from './app/components/header';
+import { registerRootComponent } from 'expo';
+import ItemsList from './components/items-list';
+import Header from './components/header';
 
 export default function App() {
   return (
@@ -22,3 +23,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+registerRootComponent(App);
