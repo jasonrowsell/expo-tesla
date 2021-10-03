@@ -6,7 +6,7 @@ import {
 
 import CarCard from '../car-card';
 import ProductCard from '../product-card';
-import items from './items';
+import items from '../../mockdata/items-data';
 
 export default function ItemsList() {
   const scrollY = useRef(new Animated.Value(0)).current;

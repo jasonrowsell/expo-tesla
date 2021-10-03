@@ -2,7 +2,7 @@ import React from 'react';
 import {
   View, StyleSheet, ScrollView, Text, Image,
 } from 'react-native';
-import menuLinks from './menu-links';
+import menuLinks from '../../mockdata/menu-links';
 
 export default function MenuItems() {
   return (
