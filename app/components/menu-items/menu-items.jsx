@@ -16,10 +16,10 @@ export default function MenuItems() {
         <Text style={styles.linkText}>
           More
         </Text>
-        <Image style={styles.moreIcon} source={require('../../assets/images/more.png')} />
+        <Image style={styles.moreIcon} source={require('../../assets/images/icons/more.png')} />
       </View>
       <View style={styles.languageContainer}>
-        <Image style={styles.globeIcon} source={require('../../assets/images/globe.png')} />
+        <Image style={styles.globeIcon} source={require('../../assets/images/icons/globe.png')} />
         <View style={styles.languageTextContainer}>
           <Text style={styles.countryText}>
             United States

@@ -27,9 +27,9 @@ export default function Header() {
         </MenuModal>
       ) : (
         <>
-          <Image style={styles.logo} source={require('../../assets/images/logo.png')} />
+          <Image style={styles.logo} source={require('../../assets/images/icons/logo.png')} />
           <TouchableOpacity onPress={() => handleModal()} style={styles.iconContainer} testID="menu-icon">
-            <Image style={styles.menuIcon} source={require('../../assets/images/menu.png')} />
+            <Image style={styles.menuIcon} source={require('../../assets/images/icons/menu.png')} />
           </TouchableOpacity>
         </>
       )}
