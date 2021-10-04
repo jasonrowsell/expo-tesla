@@ -79,7 +79,7 @@ describe('<ButtonOption />', () => {
       const button = getByText('content');
 
       expect(button).toHaveStyle({
-        color: '#171A20',
+        color: '#171A20CC',
       });
     });
   });

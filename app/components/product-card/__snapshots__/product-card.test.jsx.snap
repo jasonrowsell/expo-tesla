@@ -182,7 +182,7 @@ exports[`<CarCard /> renders correctly 1`] = `
                 "textTransform": "uppercase",
               },
               Object {
-                "color": "#171A20",
+                "color": "#171A20CC",
               },
             ]
           }

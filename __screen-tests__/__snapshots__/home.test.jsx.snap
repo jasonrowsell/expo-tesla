@@ -222,7 +222,7 @@ exports[`<Home /> renders correctly 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#5c5e62",
+                    "color": "#5C5E62",
                     "fontSize": 17,
                   }
                 }
@@ -347,7 +347,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
@@ -428,7 +428,7 @@ exports[`<Home /> renders correctly 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#5c5e62",
+                    "color": "#5C5E62",
                     "fontSize": 17,
                   }
                 }
@@ -553,7 +553,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
@@ -634,7 +634,7 @@ exports[`<Home /> renders correctly 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#5c5e62",
+                    "color": "#5C5E62",
                     "fontSize": 17,
                   }
                 }
@@ -759,7 +759,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
@@ -840,7 +840,7 @@ exports[`<Home /> renders correctly 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#5c5e62",
+                    "color": "#5C5E62",
                     "fontSize": 17,
                   }
                 }
@@ -965,7 +965,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
@@ -1162,7 +1162,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
@@ -1359,7 +1359,7 @@ exports[`<Home /> renders correctly 1`] = `
                           "textTransform": "uppercase",
                         },
                         Object {
-                          "color": "#171A20",
+                          "color": "#171A20CC",
                         },
                       ]
                     }
