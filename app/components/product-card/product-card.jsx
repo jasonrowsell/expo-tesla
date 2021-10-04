@@ -17,7 +17,6 @@ const { height } = Dimensions.get('screen');
  * @param {node} image Image of the product
  * @param {object} scrollY Current y-coordinate position on the screen
  * @param {number} index nth value in the list of items
- * @param {string} buttonContent String that is displayed inside of the button
  * @param {boolean} termsLinks Optional rendering of footer links
  *
  * @return {JSX.Element}
@@ -98,7 +97,6 @@ ProductCard.defaultProps = {
   image: null,
   scrollY: null,
   index: null,
-  buttonContent: null,
   termsLinks: false,
 };
 
@@ -108,7 +106,6 @@ ProductCard.propTypes = {
   image: PropTypes.node,
   scrollY: PropTypes.shape({}),
   index: PropTypes.number,
-  buttonContent: PropTypes.string,
   termsLinks: PropTypes.bool,
 };
 

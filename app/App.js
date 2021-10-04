@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { registerRootComponent } from 'expo';
-import Home from './screens/Home';
+import Home from './screens/home';
 
 export default function App() {
   return (
