@@ -3,6 +3,7 @@ import {
   View, Text, ImageBackground, StyleSheet, Alert, Dimensions, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import colors from '../../constants';
 
 import ButtonOption from '../button-option';
 
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
   },
 
   terms: {
-    color: '#46484d',
+    color: colors.termsMediumGray,
     fontSize: 15,
     margin: 5,
   },

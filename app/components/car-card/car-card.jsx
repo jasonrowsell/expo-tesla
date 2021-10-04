@@ -3,6 +3,7 @@ import {
   View, Text, ImageBackground, StyleSheet, Alert, Dimensions, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import colors from '../../constants';
 
 import ButtonOption from '../button-option';
 
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
   },
 
   subtitle: {
-    color: '#5c5e62',
+    color: colors.subtitleGray,
     fontSize: 17,
   },
 

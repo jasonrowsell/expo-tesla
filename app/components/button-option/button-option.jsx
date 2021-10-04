@@ -3,6 +3,7 @@ import {
   View, Text, Pressable, StyleSheet,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import colors from '../../constants';
 
 /**
  * Button component for selecting an option, will render a style of either
@@ -15,8 +16,8 @@ import PropTypes from 'prop-types';
  * @return {JSX.Element}
  */
 export default function ButtonOption({ type, content, onPress }) {
-  const backgroundColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
-  const color = type === 'primary' ? '#FFFFFF' : '#171A20';
+  const backgroundColor = type === 'primary' ? colors.darkGray : colors.mediumWhite;
+  const color = type === 'primary' ? colors.white : colors.darkGray;
 
   return (
     <View style={styles.container}>

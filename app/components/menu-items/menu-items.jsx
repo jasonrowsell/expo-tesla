@@ -2,6 +2,7 @@ import React from 'react';
 import {
   View, StyleSheet, ScrollView, Text, Image,
 } from 'react-native';
+import colors from '../../constants';
 import menuLinks from '../../mockdata/menu-links';
 
 export default function MenuItems() {
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     marginBottom: 30,
-    color: 'rgb(57, 60, 65)',
+    color: colors.menuDarkGray,
   },
 
   languageContainer: {
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
   },
 
   countryText: {
-    color: 'rgb(57, 60, 65)',
+    color: colors.menuDarkGray,
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 5,
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
   languageText: {
     fontSize: 16,
     fontWeight: '400',
-    color: 'rgb(57, 60, 65)',
+    color: colors.menuDarkGray,
   },
 
   globeIcon: {

@@ -8,7 +8,9 @@ export default {
   // ButtonOption
   darkGray: '#171A20CC',
   mediumWhite: '#FFFFFFA6',
-  mediumGray: '#171A20',
+
+  // CarCard
+  subtitleGray: '#5C5E62',
 
   // MenuItems
   menuDarkGray: 'rgb(57, 60, 65)',

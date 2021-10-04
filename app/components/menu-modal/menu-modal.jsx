@@ -3,6 +3,7 @@ import {
   View, Image, StyleSheet, TouchableOpacity, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import colors from '../../constants';
 
 import Overlay from '../overlay';
 
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
     height: '100%',
     marginLeft: 'auto',
     marginRight: 0,
-    shadowColor: '#000',
+    shadowColor: colors.black,
     shadowOpacity: 0.5,
     shadowRadius: 5,
     width: 310,

@@ -3,6 +3,7 @@ import {
   StyleSheet, Dimensions, Animated,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import colors from '../../constants';
 
 const { width, height } = Dimensions.get('screen');
 
@@ -54,7 +55,7 @@ Overlay.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: colors.black50,
     flex: 1,
     height,
     left: 0,
