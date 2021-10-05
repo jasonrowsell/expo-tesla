@@ -8,6 +8,12 @@ import CarCard from '../car-card';
 import ProductCard from '../product-card';
 import items from '../../mockdata/items-data';
 
+/**
+ * Flatlist component that renders a list of either
+ * a carCard or productCard depending on the dataset
+ *
+ * @return {JSX.Element}
+ */
 export default function ItemsList() {
   const scrollY = useRef(new Animated.Value(0)).current;
   return (

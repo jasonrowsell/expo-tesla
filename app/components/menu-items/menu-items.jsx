@@ -5,6 +5,12 @@ import {
 import colors from '../../constants';
 import menuLinks from '../../mockdata/menu-links';
 
+/**
+ * Scrollview component that renders a list of items
+ * that can be configured to be links to screens
+ *
+ * @return {JSX.Element}
+ */
 export default function MenuItems() {
   return (
     <ScrollView style={styles.container}>
