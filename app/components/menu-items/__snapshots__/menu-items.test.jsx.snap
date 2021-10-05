@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuItems /> renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "display": "flex",
+      "marginBottom": 40,
+      "marginTop": 80,
+      "paddingLeft": 40,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Model S
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Model 3
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Model X
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Model Y
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Solar Roof
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Solar Panels
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Existing Inventory
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Used Inventory
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Trade-In
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Test Drive
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Powerwall
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Commercial Energy
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Utilities
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Charging
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Find Us
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Support
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Investor Relations
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Shop
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(57, 60, 65)",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "marginBottom": 30,
+        }
+      }
+    >
+      Account
+    </Text>
+    <View
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "rgb(57, 60, 65)",
+            "fontSize": 18,
+            "fontWeight": "500",
+            "marginBottom": 30,
+          }
+        }
+      >
+        More
+      </Text>
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 15,
+            "marginRight": 40,
+            "marginTop": 5,
+            "resizeMode": "contain",
+            "width": 15,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 20,
+            "resizeMode": "contain",
+            "width": 20,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "marginLeft": 15,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "rgb(57, 60, 65)",
+              "fontSize": 18,
+              "fontWeight": "600",
+              "marginBottom": 5,
+            }
+          }
+        >
+          United States
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "rgb(57, 60, 65)",
+              "fontSize": 16,
+              "fontWeight": "400",
+            }
+          }
+        >
+          English
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
