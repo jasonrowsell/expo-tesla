@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 
-import Home from '../app/screens/home';
+import Home from '../screens/home';
 
 describe('<Home />', () => {
   test('has 1 child', () => {
