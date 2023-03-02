@@ -4,6 +4,5 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    allow:
-    # Allow both direct and indirect updates for all packages
-    - dependency-type: "all"
+    # Disable version updates for npm dependencies
+    open-pull-requests-limit: 0
